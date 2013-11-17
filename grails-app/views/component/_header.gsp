@@ -9,9 +9,8 @@
 			</div>
 		</div>
 		<div class="col-md-offset-2 col-md-10">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#about">Hoteles</a></li>
+			<ul class="menu nav navbar-nav">
+				<li class="active"><a href="#about">Hoteles</a></li>
 				<li><a href="#contact">Parques</a></li>
 			</ul>
 		</div>

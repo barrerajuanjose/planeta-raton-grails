@@ -28,3 +28,18 @@ body {
 .logo {
 	color: #D4D4E9;
 }
+
+.menu {
+	border-style: solid;
+	border-width: 3px;
+	border-color: #CFC9C9;
+	padding: 0px;
+	margin: 0px;
+	background-color: #3939DB;
+}
+
+.navbar-nav>li>a {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #CFC9C9;
+}
