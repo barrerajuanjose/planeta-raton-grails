@@ -1,10 +1,10 @@
 {
     "id": "allStarSportsResort",
-    "nombre": "All-Star Sports Resort",
-    "categoria": "economica",
-    "importancia": "100",
-    "titulo": "All-Star Sports Resort",
-    "texto": "<div class="MsoNormal" style="margin-bottom: 0cm;">
+    "name": "All-Star Sports Resort",
+    "category": "economica",
+    "weight": "100",
+    "title": "All-Star Sports Resort",
+    "text": "<div class="MsoNormal" style="margin-bottom: 0cm;">
 <div style="text-align: justify;">
 <span lang="EN-US" style="font-family: Calibri;">All-Star Sports es el más antiguo de los hoteles de la&nbsp;<b>categoría Económica</b>. Se construyó en 1994 y es el resort ideal para los fanáticos de los deportes. Está ubicado cerca de los parques&nbsp;<b>Animal Kingdom</b>&nbsp;y&nbsp;<b>Blizzard Beach</b>, y de los hoteles&nbsp;<b>All-Star Music</b>,&nbsp;<b>All-Star Movies</b>&nbsp;y&nbsp;<b>Coronado Springs</b>.<o:p></o:p></span></div>
 </div>
