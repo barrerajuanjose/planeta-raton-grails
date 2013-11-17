@@ -20,3 +20,11 @@ input, select, textarea {
 .ie6 body {
 	height: 100%;
 }
+
+body {
+	background-color: #225EC9;	
+}
+
+.logo {
+	color: #D4D4E9;
+}

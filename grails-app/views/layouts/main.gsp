@@ -10,7 +10,6 @@
 		<title><g:layoutTitle default="Planeta Raton"/></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
-		<r:require modules="bootstrap"/>
 		<g:layoutHead/>
 		<r:layoutResources/>
 	</head>
