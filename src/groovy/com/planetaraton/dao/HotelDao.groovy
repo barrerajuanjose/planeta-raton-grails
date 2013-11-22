@@ -2,6 +2,7 @@ package com.planetaraton.dao
 
 import grails.converters.JSON
 import groovy.json.JsonSlurper
+
 import org.codehaus.groovy.grails.commons.GrailsApplication;
 
 class HotelDao {
@@ -10,13 +11,13 @@ class HotelDao {
 	String hotelDirectory
 	
 	List getAll() {
-		List notes = []
+		List hotels = []
 		
 		grailsApplication.mainContext.getResource(hotelDirectory).getFile().eachFile {
-			notes.add(new JsonSlurper().parse(new StringReader(it.getText())))
+			hotels.add(new JsonSlurper().parse(new StringReader(it.getText())))
 		}
 		
-		return notes
+		return hotels
 	}
 	
 }
