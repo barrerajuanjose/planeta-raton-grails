@@ -9,7 +9,7 @@ class HotelDao {
 	GrailsApplication grailsApplication
 	String hotelDirectory
 	
-	List get() {
+	List getAll() {
 		List notes = []
 		
 		grailsApplication.mainContext.getResource(hotelDirectory).getFile().eachFile {

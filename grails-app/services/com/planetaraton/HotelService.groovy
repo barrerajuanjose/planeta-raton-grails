@@ -6,8 +6,8 @@ class HotelService {
 	
 	HotelDao hotelDao
 	
-	List get() {
-		return hotelDao.get()
+	List getAll() {
+		return hotelDao.getAll()
 	}
 
 }

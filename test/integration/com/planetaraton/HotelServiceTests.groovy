@@ -15,6 +15,6 @@ class HotelServiceTests extends GroovyTestCase {
 	
     void "test something"() {
 		println 'llego'
-		hotelService.get()
+		hotelService.getAll()
     }
 }
