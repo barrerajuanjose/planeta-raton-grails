@@ -4,10 +4,10 @@ import com.planetaraton.dao.HotelDao
 
 class HotelService {
 	
-	HotelDao hotelsDao
+	HotelDao hotelDao
 	
 	List get() {
-		return hotelsDao.get()
+		return hotelDao.get()
 	}
 
 }
