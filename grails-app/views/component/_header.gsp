@@ -1,4 +1,4 @@
-<div class="navbar navbar-fixed-top" role="navigation">
+<div class="navbar" role="navigation">
 	<div class="container">
 		<div class="row"  style="font-family: 'Myriad Pro', Myriad, 'Liberation Sans', 'Nimbus Sans L', 'Helvetica Neue', Helvetica, Arial, sans-serif;">
 			<div class="col-md-12">
