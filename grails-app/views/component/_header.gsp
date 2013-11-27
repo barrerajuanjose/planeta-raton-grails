@@ -1,4 +1,4 @@
-<div class="navbar" role="navigation">
+<div class="menu-header collapse navbar-collapse bs-navbar-collapse" role="navigation">
 	<div class="container">
 		<div class="row"  style="font-family: 'Myriad Pro', Myriad, 'Liberation Sans', 'Nimbus Sans L', 'Helvetica Neue', Helvetica, Arial, sans-serif;">
 			<div class="col-md-12">

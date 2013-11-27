@@ -21,8 +21,8 @@ input, select, textarea {
 	height: 100%;
 }
 
-body {
-	background-color: #225EC9;	
+.menu-header {
+	background-color: aliceblue;
 }
 
 .logo {
