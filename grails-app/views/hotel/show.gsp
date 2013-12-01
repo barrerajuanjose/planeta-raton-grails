@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<meta name="layout" content="main"/>
-		<link rel="stylesheet" href="${resource(dir: 'css', file: 'hotels.css')}" type="text/css">
+		
+		<p:css name="hotels" />
 	</head>
 	<body>
 		<div class="container">

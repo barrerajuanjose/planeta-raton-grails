@@ -45,6 +45,8 @@ grails.views.default.codec = "html"
 // If unspecified, controllers are prototype scoped.
 grails.controllers.defaultScope = 'singleton'
 
+uiperformance.imageExtensions = ['webp', 'gif', 'png', 'jpg']
+
 // GSP settings
 grails {
     views {
@@ -86,13 +88,43 @@ grails.hibernate.cache.queries = false
 
 environments {
     development {
-        grails.logging.jul.usebridge = true
+		grails.logging.jul.usebridge = true
+		uiperformance.enabled = false
     }
     production {
         grails.logging.jul.usebridge = false
-        // TODO: grails.serverURL = "http://www.changeme.com"
+        uiperformance.enabled = true
+		uiperformance.embebedcss = true
     }
 }
+
+// UI Performance
+uiperformance.keepOriginals = true
+uiperformance.html.compress = true
+uiPerformance.processImages = false
+uiperformance.etagfilter = false
+
+uiperformance.excludedMinifiedJs = [/.+jquery.+/]
+
+uiperformance.exclusions = [
+	"**/META-INF/**",
+	"**/temp/**",
+	"**/WEB-INF/**",
+	"**/favicon.ico"
+]
+
+uiperformance.bundles = [
+	[
+		type: 'css',
+		name: 'main',
+		files: ['bootstrap.min', 'main']
+	],
+	[
+		type: 'css',
+		name: 'hotels',
+		files: ['hotels']
+	]
+]
 
 // log4j configuration
 log4j = {
