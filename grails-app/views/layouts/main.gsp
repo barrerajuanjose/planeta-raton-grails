@@ -10,7 +10,7 @@
 		<title><g:layoutTitle default="Planeta Raton"/></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
-		<p:css name="main" />
+		<p:css name="main_css" />
 		
 		<g:layoutHead/>
 	</head>

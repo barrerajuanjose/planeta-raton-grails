@@ -3,7 +3,7 @@
 	<head>
 		<meta name="layout" content="main"/>
 		
-		<p:css name="hotels" />
+		<p:css name="hotels_css" />
 	</head>
 	<body>
 		<div class="container">

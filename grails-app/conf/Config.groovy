@@ -110,18 +110,19 @@ uiperformance.exclusions = [
 	"**/META-INF/**",
 	"**/temp/**",
 	"**/WEB-INF/**",
-	"**/favicon.ico"
+	"**/favicon.ico",
+    "**/data/notes/**"
 ]
 
 uiperformance.bundles = [
 	[
 		type: 'css',
-		name: 'main',
+		name: 'main_css',
 		files: ['bootstrap.min', 'main']
 	],
 	[
 		type: 'css',
-		name: 'hotels',
+		name: 'hotels_css',
 		files: ['hotels']
 	]
 ]
