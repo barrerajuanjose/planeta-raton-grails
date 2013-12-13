@@ -93,8 +93,8 @@ environments {
     }
     production {
         grails.logging.jul.usebridge = false
-        uiperformance.enabled = true
-		uiperformance.embebedcss = true
+        uiperformance.enabled = false
+		uiperformance.embebedcss = false
     }
 }
 
