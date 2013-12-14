@@ -23,7 +23,7 @@ class HotelService {
 		return hotels
 	}
 	
-	def get(String hotelId) {
+	def get( String hotelId ) {
 		def hotels = getAll()
 		
 		return hotels.find {
