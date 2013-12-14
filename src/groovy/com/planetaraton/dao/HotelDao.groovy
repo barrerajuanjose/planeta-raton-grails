@@ -13,7 +13,7 @@ class HotelDao {
     List getAll() {
             List hotels = []
             
-            grailsApplication.mainContext.getResource(hotelDirectory).getFile().eachFile {
+            new File('web-app/' + hotelDirectory).eachFile {
             	if( it.getName().endsWith('.json') ) {
                 	hotels.add(new JsonSlurper().parse(new StringReader(it.getText())))
                 }
