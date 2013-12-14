@@ -1,6 +1,9 @@
 package com.planetaraton
 
-import com.planetaraton.dao.HotelDao
+import grails.converters.JSON
+import groovy.json.JsonSlurper
+
+import org.codehaus.groovy.grails.commons.GrailsApplication
 
 class HotelService {
 	static transactional = false
