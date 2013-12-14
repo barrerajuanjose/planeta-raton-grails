@@ -5,10 +5,17 @@ import com.planetaraton.dao.HotelDao
 class HotelService {
 	static transactional = false
 	
-	HotelDao hotelDao
+	GrailsApplication grailsApplication
+	String hotelDirectory = 'data/notes/hotels'
 	
 	List getAll() {
-		return hotelDao.getAll()
+		List hotels = []
+		
+		grailsApplication.mainContext.getResource('/WEB-INF/' + hotelDirectory).getFile().eachFile {
+			hotels.add(new JsonSlurper().parse(new StringReader(it.getText())))
+		}
+		
+		return hotels
 	}
 	
 	def get(String hotelId) {
