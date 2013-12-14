@@ -14,8 +14,10 @@ class HotelService {
 	List getAll() {
 		List hotels = []
 		
-		grailsApplication.mainContext.getResource('/WEB-INF/' + hotelDirectory).getFile().eachFile {
-			hotels.add(new JsonSlurper().parse(new StringReader(it.getText())))
+		grailsApplication.mainContext.getResource(hotelDirectory).getFile().eachFile {
+			if( it.getName().endsWith('.json') ) {
+				hotels.add(new JsonSlurper().parse(new StringReader(it.getText())))
+			}
 		}
 		
 		return hotels
