@@ -1,26 +1,14 @@
 package com.planetaraton
 
-import grails.converters.JSON
-import groovy.json.JsonSlurper
-
-import org.codehaus.groovy.grails.commons.GrailsApplication
+import com.planetaraton.dao.HotelDao
 
 class HotelService {
 	static transactional = false
 	
-	GrailsApplication grailsApplication
-	String hotelDirectory = 'data/notes/hotels'
+	HotelDao hotelDao
 	
 	List getAll() {
-		List hotels = []
-		
-		grailsApplication.mainContext.getResource(hotelDirectory).getFile().eachFile {
-			if( it.getName().endsWith('.json') ) {
-				hotels.add(new JsonSlurper().parse(new StringReader(it.getText())))
-			}
-		}
-		
-		return hotels
+		return hotelDao.getAll()
 	}
 	
 	def get( String hotelId ) {
